@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Selectores básicos</title>
+      <link rel="stylesheet" href="CSS_02_selectores_basicos.css">
+  </head>
+  <body>
+    <h1>Listas</h1>
+    <h2>Ejemplo 1, Ingredientes</h2>
+    <ul>
+      <!--El uso de la etiqueta "span" esta se utiliza para dar propiedades a solo los elementos que se encuentren dentro de del mismo, también se puede utilizar dentro de otras etiquetas para seleccionar algo especifico de la etiqueta, por ejemplo, se tiene el siguiente texto: Una taza de harin, y quiero que la palabra harina sea de color ver se puede usar así: <li>Una taza de <span> harina <span> <li>-->
+      <li>Una taza de <span>Harina</span></li>
+      <!--El atributo "class" se usa para diferencias los elementos de su etiqueta global. Por ejemplo, la etiqueta global en este caso es <li> pero al segundo <li> que es aceite lo quiero modificar sin que afecte a los demás, para esto lo tengo que definir con una "class", y esta "class" la voy a denominar "ingrediente-faltante" porque hace parte de los ingredientes faltantes. Ahora, todos los elementos que yo defina como "ingrediente-faltante" tendrán las mismas propiedades-->
+      <li class="ingrediente-faltante">Aceite</li>
+      <li><span>Leche</li></span>
+      <li>Sal</li>
+      <!--El atributo "id" este atributo se debe utlizar una sola vez por documento, este atributo se ultiliza para la identificacion de un elemento en JavaScript o CSS-->
+      <li id="ingrediente-principal">Huevos</li>
+    </ul>
+  </body>
+</html>

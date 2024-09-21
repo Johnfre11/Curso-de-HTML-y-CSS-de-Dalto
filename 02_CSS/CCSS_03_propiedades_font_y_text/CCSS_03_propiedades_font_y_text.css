@@ -1,0 +1,38 @@
+
+.propiedades_basicas_texto {
+  /*Existen colores absolutos y colores relativos.*/
+  /*Los colores absolutos son definidos por el código del color, para que todos los navegadores lo detecten igual.*/
+  /*Los colores relativos son definidos por una palabra que hace refencia al color en cuestión, sin embargo, cada navegador interpreta de distinta manera el color relativo*/
+  color: blue;
+  
+  /*Para definir tipo de letra se utiliza la propiedad "font-family" lo que hace esta propiedad es asignar el tipo de letra según las tipografias que se da.*/
+  /*Las tipografías cuando tienen espacio deben definirse con comillas simples ('') o dobles ("")*/
+  /*Las tipografías deben ir sepadadas por coma (,) para que el navegador en caso de no tener una tipografía pueda saltar a la siguiente hasta que encuentre una tipografía que si tenga*/
+  font-family: Montserrat,'Segoe UI', Tahoma, sans-serif;
+  
+  /*Propiedad para cambiar el tamaño de la letra*/
+  font-size: 20px;
+
+  /*Propiedad que cambia el grosor del texto, por ejemplo, el input "bold" es el efecto de negrita*/
+  font-weight: bold;
+
+  /*Tipo de letra entre normal y cursiva. "italic" es muy inclinada y "oblique" es menos inclinada, encaso de que la tipografía no cuente con alguna de las opciones elige la que si existe*/
+  font-style: normal;
+
+  /*Ajusta la alineacion del texto*/
+  /*Esta propiedad tiene dos inputs muy interesantes, "start" y "end", estos funcionan igual que "left" y "right" solo que se ajusta a la forma como se escribe desde el lugar donde están viendo la página, por ejemplo, en Colombia se escribe de derecha-izquierda, pero en los paises con el idioma árabe, escriben de derecha-izquierda, el input "start" ajusta el txto según como se escriba, a diferencia de "left" que para ambos casos sería a la izquierda y los paises árabes no les vendría bien. "end" hace lo mismo pero en el lado opuesto */
+  text-align: start;
+
+  /*Puede poner linea al texto, encima, debajo o en medio. Incluso se pueden mezclar*/
+  text-decoration: underline;
+
+  /*El espaciado entre lineas*/
+  line-height: normal;
+
+  /*Espaciado de las letras*/
+  letter-spacing: normal;
+
+  /*Transforma el texto, por ejemplo, poner la primera letra en mayuscula*/
+  text-transform: capitalize;
+}
+

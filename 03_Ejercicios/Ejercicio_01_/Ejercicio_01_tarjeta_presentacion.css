@@ -1,0 +1,31 @@
+body{
+  background: black;
+  font-family: sans-serif;
+  color: white;
+}
+.card{
+  background: gray;
+  text-align: center;
+  width: 300px;
+  /*auto en "margin" se utiliza normalmente para alinear las cosas de forma horizontal*/
+  margin: auto;
+  margin-top: 50px;
+}
+h1{
+  padding-top: 10px;
+  font-size: 18px;
+}
+h2{
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
+p{
+  padding: 5px 20px;
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: justify;
+  background: lightblue;
+
+}

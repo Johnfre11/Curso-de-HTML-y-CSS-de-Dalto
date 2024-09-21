@@ -1,0 +1,92 @@
+html{
+  font-size: 20px;
+}
+h1{
+  margin: 10px;
+  font-family: sans-serif;
+}
+h2{
+  margin: 0;
+  padding-bottom: 5px;
+  font-family: sans-serif;
+}
+p{
+  margin: 0;
+  color: #444;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  
+}
+span{
+  font-size: 13px;
+  font-weight: 500;
+  color: #999;
+  width: 10px;
+}
+div{
+  background: #ededed;
+  border-left: 5px solid  #999;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.parrafo_intro{
+  padding: 10px 0;
+  font-size: 16px;
+}
+.unit_px{
+  padding: 10px;
+}
+.unit_cm{
+  padding: 1cm;
+}
+.unit_porcentaje{
+  padding: 2%;
+  width: 500px;
+}
+.unit_porcentaje_p_2{
+  width: 50%;
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+  background: #cdcdcd;
+}
+.unit_em_div{
+  padding: 10px;
+  font-size: 20px;
+}
+.unit_em_p{
+  font-size: 0.5em;
+}
+.unit_rem_div{
+  padding: 10px;
+}
+.unit_rem_p{
+  font-size: 0.75rem;
+}
+.unit_vp{
+  padding: 10px;
+  margin: auto;
+}
+
+.vmin{
+  width: 75px;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-left: 25vw;
+  background: #ace;
+  border: 0px;
+  font-size: small;
+}
+.vmax{
+  width: 100px;
+  height: 75px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-left: 25vw;
+  background: #e44;
+  color: #eee;
+  border: 0px;
+  font-size: small;
+}

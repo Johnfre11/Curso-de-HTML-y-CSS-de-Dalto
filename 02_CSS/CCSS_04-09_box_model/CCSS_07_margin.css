@@ -1,0 +1,22 @@
+
+.box_1{
+  background: gray;
+  padding: 10px;
+  /*Los márgenes no se superponen, es decir que cuando se tiene dos bloques y ambos tienen un margen de 10px, el primero hacia abajo tiene 10px y el siguiente hacia arriba tiene otros 15px, lo normal sería pensar que tienen 25px de separación por la suma de estos dos, sin embargo, estos margenes se super ponen y se mantiene el margen mayor, es decir, para este caso tendría un margen de 15px*/
+  /*Margin collapse se le denomina a este efecto*/
+  margin: 10px;
+
+}
+.box_2{
+  background: lightgray;
+  padding: 10px;
+  margin: 15px 10px;
+}
+.box_3{
+  background: lightslategray;
+  padding: 10px;
+  margin: 30px 10px;
+}
+.box_4{
+  margin: 10px;
+}

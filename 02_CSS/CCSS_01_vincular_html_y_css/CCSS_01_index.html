@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Intruduccion a CSS</title>
+      <!--La etiqueta "link" funciona para conectar el documento .html con otros documentos.-->
+      <!--El atributo "rel" de "link" viene de la palabra "relationship" y tiene como entrada el tipo de archivo que vamos a utilizar, en este caso usaremos un archivo tipo "stylesheet" (hoja de estilos) para poder darle estilo al documento . html-->
+      <!--El atributo "href" es el nombre al cual queremos referenciar-->
+      <link rel="stylesheet" href="CSS_01_styles.css">
+  </head>
+  <body>
+     <h1>Titulo 1</h1>
+     <p style ="color: red;font-size: 18px;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam ut officia cupiditate error accusantium repellendus dolorem, repellat magni sunt ab laboriosam minus consectetur, quod ex, sit enim quisquam at dicta!
+     </p> 
+     <h2>Subtiltulo enlazado con el archivo CSS</h2>
+     <p>Si el Subtiltulo es color verde es que está correctamente enlazado</p>
+     <!--Las etiquetas tienen atrivutos para poder modificar el estilo del mismo, sin embargo, esto se debería evitar-->
+
+     <!--Esto es una etiqueta "style" funciona igual que el atributo "style" de la etiqueta anterior pero además puede cambiar el estilo de distintas etiquetas, sin embargo, tampoco es recomendable.-->
+     <!-- Lo correcto es usar la etiqueta "link" dentro de la etiqueta "head"-->
+     <style>
+      p{
+        color: red;
+      }
+      h1{
+        color: blue;
+      }
+     </style>
+  </body>
+</html>
