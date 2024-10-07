@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C_HTML_10_select_datalist_option.css">
+    <title>Select, Option & Datalist</title>
+  </head>
+  <body>
+    <h1>Select, Option & Datalist</h1>
+    <form class="form_formulario">
+      <h2>Formulario de contacto.</h2>
+      <div class="form_div">
+        <label for="nombre">Nombre completo:</label>
+        <input class="form_input" type="text" placeholder="John Gonzalez" id="nombre">
+      </div>
+      <div class="form_div">
+        <label for="email">Email:</label>
+        <input class="form_input" type="email" placeholder="ejemplo@hotmail.com" id="email">
+      </div>
+      <div class="form_div">
+        <label for="mensaje">Mensaje:</label>
+        <textarea rows="7" placeholder="Deja tu mensaje aquí... " id="mensaje"></textarea>
+      </div>
+      <!--A partir de aquí comienza lo nuevo-->
+      <!--Select y Option-->
+      <div class="form_div">
+        <h3>Parte nueva</h3>
+        <h3>Select & Option</h3>
+        <label>Tipo de usuario:
+          <select name="type_of_user"> 
+            <option value="user_0">Eliga una opción</option>
+            <option value="user_1">Seguidor</option>
+            <option value="user_2">Empresa</option>
+            <option value="user_3">Empleado</option>
+            <option value="user_4">Otros</option>
+          </select>
+        </label>  
+      </div>
+      <!--DataList-->
+      <div class="form_div">
+        <h3>Datalist & Option</h3>
+        <label>Reference:
+          <input class="form_input" list="reference" name="reference">
+          <datalist id="reference" name="type_of_reference"> 
+            <option value="user_0">Eliga una opción</option>
+            <option value="user_1"> Un seguidor</option>
+            <option value="user_2">Una empresa</option>
+            <option value="user_3">Un empleado</option>
+            <option value="user_4">Otros</option>
+          </datalist>
+        </label>  
+      </div>
+      <div class="form_div boton_submit">
+        <input class="form_input" type="submit" placeholder="Enviar">
+      </div>
+    </form>
+  </body>
+</html>

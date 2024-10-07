@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="C_HTML_14_tablas.css">
+  <title>Tablas</title>
+</head>
+<body>
+  <h1>Tablas</h1>
+  
+  <p>La etiqueta de las tablas es "tables", las tablas tienen sus etiquetas internas, las cuales son: "th" (table header) es el encabezado de las columnas, "tr" (table row) lo que hace es crear una fila, "td" crea celdas dentro de las filas</p>
+  <p>Otras etiquetas importantes de las tablas son: "thead" define el encabezado de la tabla, "tbody" define todos los datos de la tabla, "tfoot" define el final de la tabla, usualmente para totales.</p>
+  <table>
+    <thead>
+      <tr>
+        <th class="header_blank"></th>
+        <th>Columna 1</th>
+        <th>Columna 2</th>
+        <th>Columna 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Fila 1</th>
+        <td>F1C1</td>
+        <td>F1C2</td>
+        <td>F1C3</td>
+      </tr>
+      <tr>
+        <th>Fila 2</th>
+        <td>F2C1</td>
+        <td>F2C2</td>
+        <td>F2C3</td>
+      </tr>
+      <tr>
+        <th>Fila 3</th>
+        <td>F3C1</td>
+        <td>F3C2</td>
+        <td>F3C3</td>
+      </tr>
+    </tbody>
+    <!--Hay otra función para combinar celdas en caso de ser necesario, para esto se utiliza el atributo "colspan" y el número de columnas que se quiere combinar-->
+    <tfoot>
+      <tr>
+        <th class="header_combinado">Combinado</th>
+        <td class="dato_combinado" colspan="3">Celda combinada</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

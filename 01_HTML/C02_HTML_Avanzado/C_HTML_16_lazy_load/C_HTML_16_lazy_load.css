@@ -1,0 +1,8 @@
+body{
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+img{
+  width: 95vw;
+  box-sizing: content-box;
+}

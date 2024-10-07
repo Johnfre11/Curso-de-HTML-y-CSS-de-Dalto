@@ -1,0 +1,59 @@
+body{
+  font-family: sans-serif;
+  background-color: #222222;
+  color: #eee;
+  margin: 0;
+}
+h1{
+  text-align: center;
+  margin: 0;
+  margin-top: 50px;
+}
+h2{
+  margin: 0;
+  padding: 20px 0;
+  font-weight: 100;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.form_formulario{
+  background-color: transparent;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #000d;
+}
+.form_div{  
+  margin: 10px 20px;
+  
+}
+.form_input{
+  min-width: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px #000d;
+  background-color: transparent;
+  border: 1px solid #666;
+  color: #eee;
+  margin-top: 5px;
+}
+.boton_submit{
+  width: 25%;
+  padding-bottom: 20px;
+  margin: auto;
+}
+textarea{
+  min-width: 100%;
+  margin: 5px 0;  
+  padding: 5px 10px;
+  resize: none;
+  font-family: sans-serif;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #eee;
+}
+label{
+  font-size: 0.9em;
+}

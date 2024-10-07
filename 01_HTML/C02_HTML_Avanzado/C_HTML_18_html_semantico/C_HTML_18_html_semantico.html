@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="C_HTML_18_html_semantico.css">
+  <title>HTML Semántico</title>
+</head>
+<body>
+  <h1>HTML Semántico</h1>
+  <h2>Etiquetas semánticas</h2>
+  <p>Las etiquetas semánticas son utilizadas específicamente para funciones concretas y evitar usar tantas etiquetas genéricas. Además tiene funcionalidades benéficiosas en los motores de busqueda, pocisionan mejor la página web por un correcto uso de las etiquetas semánticas.</p>
+
+  <!--Etiqueta de encabezado "header", se puede tener más de un ecabezado-->
+  <header>
+    <!--Etiqueta para crear una barra de navegación "nav"-->
+    <nav>
+      <!--Lista de opciones-->
+      <ul>
+        <!--Distintas ubicaciones de la página-->
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Noticia</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Preguntas y respuestas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--Es un separador, hace referencia a secciones de la página-->
+  <section class="inicio_container">
+  </section>
+
+  <!--Digamos que el contenido principal de la página web es una noticia, en este caso es idela encerrar el contenido en la etiqueta "main"-->
+  <!--"main", Apartado principal de la página.-->
+  <main>
+    <section class="noticia_container">
+    </section>
+  </main>
+  
+  <!-- "aside" Es una etiqueta que sirve para el contenido secundario relacionado con el tema principal de la página.-->
+  <aside>
+    <section class="contacto_container">
+    </section>
+  </aside>
+
+  <!--"footer" es el pie de página de la página web, sirve usualmente para recoger toda la información de valor y enlaces principales.-->
+  <footer>
+    <section>
+      <p>Copyright © 2024 - Protegido por derechos de autor.</p>
+    </section>
+  </footer>
+</body>
+</html>

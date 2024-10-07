@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text area</title>
+    <link rel="stylesheet" href="C_HTML_08_text_area.css">
+  </head>
+  <body>
+    <h1>Textarea</h1>
+    <form>
+      <h2>Formulario de contacto</h2>
+      <div class="form_input">
+        <input type="text" placeholder="Nombre completo">
+      </div>
+      <div class="form_input">
+        <input type="email" placeholder="Email">
+      </div>
+      <div class="form_input form_submit">
+        <input type="submit">
+      </div>
+    </form>
+    <form class="form_transparente">
+      <h2>Formulario de contacto</h2>
+      <div class="form_input">
+        <input class="input_transparente" type="text" placeholder="Nombre completo">
+      </div>
+      <div class="form_input">
+        <input class="input_transparente" type="email" placeholder="Email">
+      </div>
+      <div class="form_input">
+        <!--La etiqueta "textarea" tiene disferentes atributos como, readonly (Solo deja ver el contido sin modificarlo), disable (Evita que el contenido se guarde en el servido, además no se puede seleccionar la casilla), maxlength (asigan un número máximo de caracteres), rows (asigna una altura dependiendo del número de lineas que queremos)-->
+        <textarea maxlength="200" rows="5" placeholder="Esto es un textarea. :D"></textarea>
+      </div>
+      <div class="form_input form_submit">
+        <input class="input_transparente" type="submit">
+      </div>
+    </form>
+  </body>
+</html>

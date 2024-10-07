@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones</title>
+    <link rel="stylesheet" href="C_HTML_13-02_terms.css">
+</head>
+<body>
+    <div class="terms-container">
+        <h1>Términos y Condiciones de BadAss</h1>
+        <p>Última actualización: 24/09/2024</p>
+
+        <!--------------------CÓDIGO DEL CAPÍTULO 13---------------------->
+        <!--Aprender a enlazar partes de la misma página, se debe usar el # dentro del href y la sección a donde se quiere ir debe tener el mismo contenido del href pero son el #-->
+        <div>
+            <a href="#Politica_de_Privacidad">Politica_de_Privacidad</a>
+        </div>
+        <div>
+            <a href="#Envio">Envio</a>
+        </div>
+        <!--Descargar archivos propios, solo se debe agregar el atributo "download"-->
+        <div>
+            <a href="C_HTML_13-02_terms.html" download> DESCARGAR TERMINOS Y CONDICIONES.</a>
+        </div>
+        <!--Descargar archivos externos, se debe agregar el atributo "download" y además el atributo "rel" seguido por el parametro "noopener" o "noreferrer" para evitar que nuestra página cambie cuando se le de click a la página externa-->
+        <!--La diferencia principal entre "noopener" y "noreferrer" es que "noreferrer" no le indica a la página externa, la página de donde fue redireccionado-->
+        <!--Además está el parámetro "nofollow" lo que hace este parámetro es decirle a los motores de búsqueda que los links que pongan los usuarios no está relacionado con nostros-->
+        <div>
+            <a href="https://www.youtube.com/static?template=terms&hl=es&gl=AR" target="_blank" rel="noopener noreferrer nofollow"> Terminos y condiciones de youtube</a>
+        </div>
+        <!--Atributo "mailto:" funciona para enviar un mail desde el correo local del computador-->
+        <div>
+            <a href="mailto:ejemplo@hotmail.com"> Mandar un mail al creador</a>
+        </div>
+        <!--Atributo "tel:" funciona para marcar a un telefono-->
+        <div>
+            <a href="tel:+3412345678"> Telefono +3412345678</a>
+        </div>
+        
+        <!-----------------TERMINA EL CÓDIGO DEL CAPÍTULO 13-------------->
+
+        <h2 id="General">1. General</h2>
+        <p>1.1. El uso de nuestro sitio web está condicionado a la aceptación de los términos y condiciones aquí establecidos.</p>
+        <p>1.2. Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento.</p>
+
+        <h2 id="Condiciones_de_Venta">2. Condiciones de Venta</h2>
+        <p>2.1. Todos los productos ofrecidos en nuestro sitio están sujetos a disponibilidad.</p>
+        <p>2.2. Nos reservamos el derecho de rechazar cualquier pedido por cualquier motivo.</p>
+
+        <h2 id="Politica_de_Devoluciones">3. Política de Devoluciones</h2>
+        <p>3.1. Por razones de higiene, no aceptamos devoluciones ni cambios de ropa interior, excepto en caso de defecto de fabricación.</p>
+        <p>3.2. Si recibes un producto defectuoso, debes notificarnos dentro de los 7 días posteriores a la entrega.</p>
+
+        <h2 id="Politica_de_Privacidad">4. Política de Privacidad</h2>
+        <p>4.1. Recopilamos información personal para procesar tus pedidos.</p>
+        <p>4.2. No compartimos tu información personal con terceros sin tu consentimiento.</p>
+
+        <h2 id="Envio">5. Envío</h2>
+        <p>5.1. Los plazos de entrega estimados se proporcionan en el momento de la compra.</p>
+
+        <h2 id="Propiedad_Intelectual">6. Propiedad Intelectual</h2>
+        <p>6.1. Todo el contenido del sitio web es propiedad de BadAss.</p>
+
+        <h2 id="Limitacion_de_Responsabilidad">7. Limitación de Responsabilidad</h2>
+        <p>7.1. BadAss no será responsable de ningún daño directo, indirecto o consecuente.</p>
+
+        <h2 id="Jurisdiccion">8. Jurisdicción</h2>
+        <p>8.1. Estos términos se regirán e interpretarán de acuerdo con las leyes del país.</p>
+    </div>
+</body>
+</html>

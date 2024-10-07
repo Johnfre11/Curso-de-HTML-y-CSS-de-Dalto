@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="C_HTML_15_audio_y_video.css">
+  <title>Audio y video</title>
+</head>
+<body>
+  <h1>Audio y video</h1>
+  <p>Existen dos etiquetas para estas funciones las cuales son "video" y "audio".</p>
+  <h2>Video</h2>
+  <p>La etiqueta "video" tiene algunos atributos como: "autoplay" para que se reproduzca automaticamente cuando el usuario interactua con la página, "controls" para que se muestren los controles del video y "poster" para poner una miniatura del video, "muted" que funciona para que que haya una interacción y el video se reproduzca siempre que se cargue la página y el usuario le ponga volumen y "loop" lo que hace es reproducir el video en bucle. <br><br>Dentro de la etiqueta "video" se puede agregar otra llamada "track" para agregar subtitulos, esta etiqueta tiene distintos atributos como: "src" para agregar la ruta del archivo .vtt de los subtitulos, "default" para agregar los subtitulos por default, "kind" para definir el tipo, "srclang" para definirle al navegador en qué idioma están los subtitulos, "label" para agregar una etiqueta a los subtitulos. Para este ejemplo no tengo un arcivo .vtt pero dejará todo escrito como debería ser. </p>
+  <video class="video" src="C_HTML_15_video/Video.mp4" loop controls autoplay muted poster="https://i.ytimg.com/vi/ELSm-G201Ls/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAcZg1MYk3FHbjEqCv8tvpah4GDiQ">
+    <track src="archivo.vtt" default kind="subtitles" srclang="es" label="Español (Latinoamericano)">
+  </video>
+  <h2>Audio</h2>
+  <p>La etiqueta "audio" tiene los mismos atributos que la etiqueta "audio" menos el atributo "poster" no lo tiene porque los audios usualmente no tiene miniatura.</p>
+  <audio src="C_HTML_15_audio/Audio.mp3" controls muted autoplay></audio>
+</body>
+</html>

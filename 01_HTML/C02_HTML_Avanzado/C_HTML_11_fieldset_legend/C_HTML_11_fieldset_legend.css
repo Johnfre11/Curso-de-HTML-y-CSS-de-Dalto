@@ -1,0 +1,79 @@
+body{
+  font-family: sans-serif;
+  background-color: #222222;
+  color: #eee;
+  margin: 0;
+}
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 50px;
+  font-weight: 100;
+}
+.form_formulario{
+  background-color: transparent;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #000d;
+  padding: 10px 0;
+}
+.form_div{  
+  margin: 10px 20px;
+  
+}
+.form_input{
+  width: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px #000d;
+  background-color: transparent;
+  border: 1px solid #666;
+  color: #eee;
+  margin: 5px 0;
+}
+.form_input_2{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
+  color: #eee;
+}
+.boton_submit{
+  width: 25%;
+  padding-bottom: 20px;
+  margin: auto;
+}
+label{
+  font-size: 0.9em;
+}
+fieldset{
+  margin: 20px 0;
+  border: 1px solid #6669;
+  border-radius: 10px;
+}
+legend{
+  padding: 2px 5px;
+  border: 1px solid #6669;
+  border-radius: 5px;
+  background-color: #6669;
+  color: #dedede;
+  
+}
+.legend_input_2{
+  font-size: 10px;
+  padding: 0 2px;
+  border: 1px solid #6669;
+  border-radius: 5px;
+  background-color: #6669;
+  color: #dedede;
+  margin: 0;
+}
+.fieldset_input_2{
+  margin: 4px 0;
+}

@@ -1,0 +1,68 @@
+body {
+  font-family: sans-serif;
+  background-color: #222222; /* Color de fondo principal */
+  color: #eee; /* Color de texto principal */
+  margin: 0;
+  padding: 0;
+}
+a{
+  font-size: 10px;
+  margin: 0;
+}
+.terms-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #333333; /* Fondo más claro para el contenedor */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+  color: #eee; /* Color del texto */
+}
+
+h1 {
+  font-size: 28px;
+  color: #ff6f61; /* Color de acento para el título */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #ff6f61; /* Color de acento para subtítulos */
+  margin-top: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #eee; /* Color del texto del párrafo */
+  line-height: 1.6;
+}
+
+/* Enlaces */
+a {
+  color: #ff6f61; /* Color de acento para enlaces */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .terms-container {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+}
