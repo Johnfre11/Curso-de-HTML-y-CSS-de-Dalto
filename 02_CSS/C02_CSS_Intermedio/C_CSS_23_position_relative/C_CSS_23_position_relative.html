@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="C_CSS_23_position_relative.css">
+  <title>Posición Relativa</title>
+</head>
+<body>
+  <h1>Posición Relativa</h1>
+  <p>La propiedad "position" con el valor "relative" funcina como punto de referencia para otros objetos para moverse, por ejemplo, la caja 1 (naranja) tiene la clase "box" y esta clase tiene la propiedad "position" con el valor "relative" y la caja 2 (gris) tiene la misma clase "box" y además, la clase modificadora "box--gray" la cual cambia el color de caja y su posición.</p>
+  <br>
+  <p>Ambas cajas tienen una dimension de 100x100px.</p>
+  <br>
+  <div class="contenedor-de-box">
+    <div class="box">
+      <p>Caja 1.</p>
+    </div>  
+    <div class="box box--gray">
+      <p>Caja 2.</p>
+    </div>
+  </div>
+  <p>Cabe resaltar que el espacio original de la caja 2 se matiene, es como si la caja existiera en ese espacio pero se mostrara en otra posición según nosotros lo definimos, por eso este párrafo no comienza justo debajo de la caja 2. Como  se puede observar la caja 2 comienza en el centro de la caja 1, esto es porque tiene las propiedades: </p>
+  <ul>
+    <li>Top: -50px</li>
+    <li>Left: 50px</li>
+  </ul>
+  <h2>Propiedades Top, Bottom, Left, Right.</h2>
+  <p>También se podrían usar las propiedades "Right" y "Bottom", sin embargo estas tienen una prioridad más baja que "Top" y "Left", por lo tanto es recomendable usar estas dos últimas.</p>
+  <h2>Propiedad z-index.</h2>
+  <p>Las páginas web poniendo un elemento encima del elemento anterior, es decir, si tenemos las mismas cajas anteriores y agregarmos una tercera se puede ver como se van colocando una encima de la otra.</p>
+  <br>
+  <div class="contenedor-de-box">
+    <div class="box">
+      <p>Caja 1.</p>
+    </div>  
+    <div class="box box--gray">
+      <p>Caja 2.</p>
+    </div>
+    <div class="box box--lightblue">
+      <p>Caja 3.</p>
+    </div>
+  </div>
+  <p>Para manejar cual caja poner encima de la otra está la propiedad z-index, este funciona con valores, en este caso como no está definida esta propiedad en las cajas anteriores todas tienen el mismo valor y se superponen, pero, si repetimos las cajas y definimos un z-index para cada una con los valores de 10, 30 y 20, esto significa que la caja 2 está por encima de las otras dos, la caja 3 está por encima de la caja 1 y debajo de la caja 2. Una buena práctica es definir los z-index de 10 en 10.</p>
+  <br>
+  <div class="contenedor-de-box">
+    <div class="box box--2">
+        <p>Caja 1.</p>
+      </div>  
+      <div class="box box--gray box--gray--2">
+        <p>Caja 2.</p>
+      </div>
+      <div class="box box--lightblue box--lightblue--2">
+        <p>Caja 3.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

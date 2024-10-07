@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="C_CSS_24_position_absolute.css">
+  <title>Posición Absolute</title>
+</head>
+<body>
+  <h1>Posición Absoluta</h1>
+  <p>Cuando se le da la propiedad de "position" con el valor de "absolute" a un elemento, este elemento pasa a no ocupar un espacio en la página web, es decir, el elemento se puede observar pero no tiene un lugar específico en la página web, esta posición del elemento se la debemos dar con  las propiedades de "top", "left", "bottom" y "right", respecto a la esquina superior izquierda.</p>
+  <br>
+  <p>Por ejemplo, creamos 3 cajas de dimensiones 100x100px, pero la caja 2 estará ubicada con posición absoluta. </p>
+  <div class="contenedor-de-box">
+    <div class="box">
+      <p>Caja 1.</p>
+    </div>  
+    <div class="box box--gray">
+      <p>Caja 2.</p>
+    </div>
+    <div class="box box--lightblue">
+      <p>Caja 3.</p>
+    </div>
+  </div>
+  <p>A diferenica de las otras dos cajas, la caja 2 se mantiene en la posición sin importar el tamaño de la pàgina, esto es porque se dio una posición en px lo cual siempre mantiene la misma distanca de la esquina superior izquierda, sin embargo, se puede dar la posición en % lo cual mantiene siempre la proporcón dada.</p>
+  <br>
+  <p>Sin embargo, este punto de referencia se puede cambiar, haciendo que su contenedor tenga la propiedad de "position" con el valor "relative".</p>
+  <div class="contenedor-de-box contenedor-de-box--relative">
+    <div class="box">
+      <p>Caja 1.</p>
+    </div>  
+    <div class="box box--gray box--gray--2">
+      <p>Caja 2.</p>
+    </div>
+    <div class="box box--lightblue">
+      <p>Caja 3.</p>
+    </div>
+  </div>
+  <p>En este caso la caja 2 tiene un "top" y un "left" de 50px los cuales se cuentan desde la esquina superior izquierda del borde donde están, en este caso por más de que cambie le tamaño de la página esta caja no se saldrá de su contenedor. </p>
+  <p>Una pregunta que me surge mientras hago este ejercio es, ¿por qué la caja 2 está encima de las otras dos sí, en el orden de creación está de segunda y tampoco tienen definidos un z-index? esto es porque la caja dos está creando un espacio absoluto propio, por lo tanto está por encima de las otras dos, en caso de que se quiera hacer que la caja 1 o caja 3 estén por encima de la caja 2 se debe definir la propiedad "position" con el valor de "relative".</p>
+  <div class="contenedor-de-box contenedor-de-box--relative">
+    <div class="box box--relative">
+      <p>Caja 1.</p>
+    </div>  
+    <div class="box box--gray box--gray--2 box--gray--2--relative">
+      <p>Caja 2.</p>
+    </div>
+    <div class="box box--lightblue box--lightblue--relative">
+      <p>Caja 3.</p>
+    </div>
+  </div>
+</body>
+</html>

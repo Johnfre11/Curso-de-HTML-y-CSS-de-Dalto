@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="C_CSS_15_selectores_avanzado.css">
+  <title>Selectores Avanzados</title>
+</head>
+<body>
+
+  <h1>Selectores Avanzados</h1>
+  <h2>Modificar atributos seleccionando uno en espeífico (SELECTORES POR ATRIBUTO).</h2>
+  <p>Por ejemplo, la siguiente imagen tiene como source "src" igual a "Imagenes/imagen-de-prueba.png".</p>
+  <p>Para Modificar las propiedades de esta imagen se debe usar "[]" en css, por ejemplo, esta imagen le quiero cambiar únicamente el tamaña, por lo tanto en css debo escribir la siguiente sintaxis: img[src="Imagenes/imagen-de-prueba.png"].</p>
+  <img src="Imagenes/imagen-de-prueba.png" alt="Imagen de prueba"></img>
+  <p>También para seleccionar las imágenes que terminan en png se usaría de la siguiente manera: img[src$="png"] agregando el signo $ despues del atributo al que se quiere referir. El signo $ indica que se debe terminar con eso que se encuentre entre comillas.</p>
+  <img src="Imagenes/imagen-de-prueba.png" alt="Imagen de prueba"></img>
+  <p>El signo "^" funciona como signo para indicar algo con lo que empieza, por ejemplo, la misma imagen se puede modicar usando la siguiente sintaxis: img[src^="Imagenes"] </p>
+  <img src="Imagenes/imagen-de-prueba.png" alt="Imagen de prueba"></img>
+  <h2>Modificar por hijos (SELECTORES POR HIJOS).</h2>
+  <p>Para un ejemplo crearé una lista desordenada.</p>
+  <p>En la siguientelista tenemos la etiqueta "ul" que es el papá de todos los elementos que tiene dentro, los "li" que son hijos directos de "ul" y por último, la etiqueta "strong" que es hijo directo del tercer "li" y nieto de "ul".</p>
+  <ul>
+    <li>Elemento 1: facil.</li>
+    <li>Elemento 2: normal.</li>
+    <li>Elemento 3: <strong>dificil</strong></li>
+  </ul>
+  <p>Para cambiar las propiedades de una etiqueta que sea hija directa o indirecta basta con escribir el nombre de la etiqueta padre y la hija (directa o indirecta). Por ejemplo, le voy a cambiar el color de la etiqueta "strong" con la siguiente sintaxis: ul strong{ }</p>
+  <p>Para cambiar las propiedades de una etiqueta que sea hija directa se debe escribir el nombre del padre seguido por el signo de mayor que ">" y por último el nombre de la hija (directa). Por ejemplo, voy a subrayar la etiqueta "li" con la siguiente sintaxis: ul li{ }, dado que "strong" es hija de "li" por lo tanto también adopta esta propiedad.</p>
+  <p>Por ejemplo, si yo quisiera tachar "strong" con la forma de hijo directo no podría porque "strong" no es hijo directo de "ul".</p>
+  <h2>Modificar elementos adyacentes (SELECTOR ADYACENTE).</h2>
+  <p>Para cambiar las propiedades de una etiqueta adyacente se debe escribir el primer elemento seguido por "+" y por último, el elemento adyacente. Por ejemplo, le voy a cambiar el color al "h2" que esté seguido por un "h1" con la siguiente sintaxis: h1 + h2{ }</p>
+  <h2>Modificar elementos adyacentes (SELECTOR DE HERMANOS GENERALES).</h2>
+  <p>Para cambiar las propiedades todas las etiquetas que vengan después de una etiqueta específica se realiza con el simbolo "~".Por ejemplo, le voy a cambiar el color a todos los "p" que vengan después de un "h2" con la siguiente sintaxis: h2 ~ p{ }</p>
+
+</body>
+</html>

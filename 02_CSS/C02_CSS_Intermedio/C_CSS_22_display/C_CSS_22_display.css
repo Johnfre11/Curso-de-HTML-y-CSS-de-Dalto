@@ -1,0 +1,63 @@
+body{
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+/*-----Ejemplos de display: block-----*/
+.enlaces-de-ejemplo-display{
+  background-color: #ccc;
+  margin: 5px 0;
+  border: 1px solid #222;
+}
+.enlaces-de-ejemplo-display--block{
+  display: block;
+}
+/*------Ejemplos de display: inline------*/
+.p-de-ejemplo-display{
+  background-color: #ccc;
+  border: 1px solid #222;
+  margin: 5px 0;
+}
+.p-de-ejemplo-display--inline{
+  display: inline;
+  margin: 5px;
+}
+
+/*-----Ejemplo de display: inline-block-----*/
+/*Propiedades generales de la lista*/
+.nav{
+  background-color: #ddd7;
+}
+.nav__list{
+  margin: 0;
+  text-align: center;
+}
+.nav__link{
+  color: #48e;
+  text-decoration: none;
+}
+.nav__link:hover{
+  background-color: #fff8;
+}
+
+/*Propiedades específicas del ejemplo usando display*/
+.item--display-inlineblock{
+  display: inline-block;
+}
+.link--display-inlineblock{
+  display: block;
+  padding: 10px 10px;
+}
+
+.link--button{
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #48e6;
+  color: #333;
+  padding: 4px 12px;
+  margin-left: 40px;
+}
+.link--button:hover{
+  background-color: transparent;
+  color: #48e;
+}

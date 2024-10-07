@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="C_CSS_21_metodologia_BEM.css">
+  <title>Metodología BEM</title>
+</head>
+<body>
+  <!--Explicación de la metodología BEM-->
+  <!--
+  <h1>Metodología BEM</h1>
+  <p>Motivos por el cual utilizar la metodología BEM: </p>
+  <ul>
+    <li>Reutilizar código.</li>
+    <li>Resuelve problemas de especificidad (prioridad).</li>
+    <li>Código más legible.</li>
+  </ul>
+  <p>La metodología BEM se separa en tres partes.</p>
+  <ol>
+    <li><span class="span-negrita">Bloque:</span> Elemento independiente que no necesita de nadie para existir.
+      <p><span class="span-negrita">Ejemplos de bloque puede ser: </span>Barra de navegación, tarjeta de presentación, notificación, formulario, publicaciones, etc...</p>
+      <p>Es un elemento que se puede reutilizar en cualquier otro lugar de la página web.</p>
+    </li>
+    <li><span class="span-negrita">Elemento:</span> Es la parte de un bloque.
+      <p><span class="span-negrita">Ejemplos de un elemento puede ser: </span>Las opciones de una barra de navegación, los íconos de la barra de navegación (por ejemplo de google drive), etc...</p>
+    </li>
+    <li><span class="span-negrita">Modificador: </span>Es una clase que modificar un bloque o elemento. </li>
+  </ol>-->
+  <!--Ejemplo usando la metodología BEM-->
+  <h2>Ejemplo usando la metodología BEM</h2>
+  <h3>Ingredientes para hacer ñoquis.</h3>
+  <h4>Lista 1.</h4>
+  <!--Esta lista de ingredientes puede ser un bloque, porque no depende de nadie más.-->
+  <!--Los bloques deben ser nombrados con la funcionalidad que tienen.-->
+  <ul class="lista-de-ingredientes">
+    <!--Los elementos de la lista de ingredientes pueden denominarse como elemento.-->
+    <!--Los elemento de un bloque se deben nombrar primero con el bloque a donde pertenecen, seguido por dos rayas al piso y finalmente el nombre del elemento que es. -->
+    <li class="lista-de-ingredientes__item">Agua.</li>
+    <li class="lista-de-ingredientes__item">Papa.</li>
+
+    <!--Si en este caso se quiere especificar en el ingrediente sal es dañino y se debe marcar en rojo se debe agregar una clase modificadora.-->
+    <!--La sintaxtis de esta clase modificadora debe ser el nombre del elemento seguido por dos -- y terminado en la modificación-->
+    <li class="lista-de-ingredientes__item item--danino">Sal.</li>
+    <li class="lista-de-ingredientes__item item--importante">Harina.</li>
+  </ul>
+
+  <h4>Lista 2, es vieja.</h4>
+  <ul class="lista-de-ingredientes lista-de-ingredientes--vieja">
+    <li class="lista-de-ingredientes__item">Agua.</li>
+    <li class="lista-de-ingredientes__item">Papa.</li>
+    <li class="lista-de-ingredientes__item item--danino">Sal.</li>
+    <li class="lista-de-ingredientes__item item--importante">Harina.</li>
+  </ul>
+  
+</body>
+</html>

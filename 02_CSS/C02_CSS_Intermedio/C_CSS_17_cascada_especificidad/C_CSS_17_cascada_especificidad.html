@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="C_CSS_17_cascada_especificidad.css">
+  <title>Cascada y especificidad</title>
+</head>
+<body>
+  <h1>Cascada y especificidad</h1>
+  <h2>Especificidad</h2>
+  <p>La especificidad tiene tres niveles de prioridad, los cuales son:</p>
+  <ul>
+    <li>(0,0,1) Prioridad más baja: Se define en css solo como una etiqueta general.</li>
+    <img src="Imagenes/Especificidad_001.png" alt="Imagen de prioridad baja.">
+    <li>(0,1,0) Prioridad media: Se define en css con un "." antes del nombre y en html como un "class".</li>
+    <img src="Imagenes/Especificidad_010.png" alt="Imagen de prioridad media.">
+    <li>(1,0,0) Prioridad más alta: Se define en css con un "#" antes del nombre y en html como un "id"</li>
+    <img src="Imagenes/Especificidad_100.png" alt="Imagen de prioridad alta.">
+  </ul>
+  <h2>Ejemplos de Especificidad</h2>
+  <ul>
+    <li><h3 class="titulo1" id="titulo1">Este es el articulo h3, el cual tiene todas las prioridades definidas.</h3></li>
+    <p>Tiene todas las prioridades definidas porque es un articulo h3, por ende tiene la más baja, además le agregué un "class" y un "id", ambos definidos como "titulo1". A pesar de que en css tiene propiedadades diferentes según su prioridad, este título tiene el color de la prioridad más alta (lightblue):</p>
+    <img src="Imagenes/Ejemplo_especificidad_titulo1.png" alt="Ejemplo titulo1">
+    <p>En caso de que no estuviera definido el "id" (prioridad más alta) el color sería rojo porque "class" tiene un prioridad mayor.</p>
+  </ul>
+  
+  <h2>Cascada</h2>
+  <p>La cascada se usa para asignar una propiedad según el orden de asignación, es decir, que si a un elemento se le define una propiedad de manera diferente con la misma prioridad este elemento adoptará la última propiedad que se definió.</p>
+  <h2>Ejemplos de cascada</h2>
+  <ul>
+    <li><h3 class="titulo2">Este es el articulo h3, el cual solo tiene la prioridad "class" definida.</h3></li>
+    <p>El titulo anterior tiene la prioridad "class" definida como "titulo2" y el css se ha modificado el color usando dos veces esta prioridad.</p>
+    <img src="Imagenes/Ejemplo_especificidad_titulo2.png" alt="Ejemplo titulo2">
+    <p>Como se puede ver el titutlo tiene color rojo, dado que esta fue la última propiedad en definirse.</p>
+  </ul>
+
+  <h2></h2>
+  
+</body>
+</html>

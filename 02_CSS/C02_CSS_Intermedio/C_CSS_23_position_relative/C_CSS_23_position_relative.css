@@ -1,0 +1,46 @@
+body{
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  background-color: #ededed;
+}
+p{
+  margin: 0;
+}
+.contenedor-de-box{
+  border: 2px solid #000;
+  margin: 10px;
+}
+/*Propiedad "position" con "relative"*/
+.box{
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  text-align: center;
+  background-color: #ffa60067;
+  position: relative;
+}
+/*Propiedades "Top", "Left", "Bottom", "Right"*/
+.box--gray{
+  background-color: #808080;
+  top: -50px;
+  left: 50px;
+}
+.box--lightblue{
+  background-color: #add8e6;
+  top: -100px;
+  left: 100px;
+}
+
+/*Propiedad z-index*/
+.box--2{
+  z-index: 10;
+}
+.box--gray--2{
+  z-index: 30;
+}
+.box--lightblue--2{
+  z-index: 20;
+  top: -175px;
+  left: 75px;
+}

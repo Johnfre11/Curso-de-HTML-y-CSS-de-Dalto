@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Units</title>
+  <link rel="stylesheet" href="C_CSS_11_units.css">
+</head>
+<body><!--
+  <h1>Units</h1>
+  <h2>Unidades Absolutas</h2>
+  <p class="parrafo_intro">Unidades que no suelen cambiar según la referencia.</p>
+  <div class="unit_px"><h2>Unit_px <span>(hace un momento)</span></h2>
+    <p> La medida de px es pixeles, es el espacio de luz más pequeño que puede tener un monitor, es una medida absoluta. Se utiliza usualmente para la medición de elementos, por ejemplo, margin, padding, imagenes, tamñado de texto, etc...</p>
+  </div>
+  <div class="unit_cm"><h2>Unit_cm/mm/in <span>(hace un momento)</span></h2>
+    <p>La medidad de cm, mm y in (inches) son medidas absolutas reales, es decir, en cada monitor/navegador cambia, pero en la vida real son medidas iguales, por lo cual son usadas cuando se necesita ver algo en la vida real, como por ejemplo, al generar un pdf que se requiera imprimir, como lo puede ser un recibo de pago, las margenes de este recibo deben ser de una medida específica ya se en cm, mm o in de la vida real. <br><br> Por ejemplo, este recuadro tiene un padding de 1cm.</p>
+  </div>
+  <h2>Unidades Relativas</h2>
+  <p class="parrafo_intro">Unidades que dependen de una referencia.</p>
+  <div class="unit_porcentaje"><h2>Unit_% <span>(hace un momento)</span></h2>
+    <p>La medidad de porcentaje (%) se mide a partir de su contenedor,por ejemplo, este texto está contenido en la etiqueta div y por defecto tiene un width de 100%, es decir que tiene el texto mismo ancho que la etiqueta. </p>
+    <p><br></p>
+    <p class="unit_porcentaje_p_2">Pero, ahora este parrafo lo voy a cambiar le voy a cambiar el width a 50%, agregaréun fondo par que se aprecie mejor, le agregaré un padding-left del 25% para centrar el texto (quedando 25% 50% 25%) y por último, lo voy a centrar.</p>
+    <p><br> En conclusioón si este div tiene un tamaño de 500px el segundo parrafo tendrá un ancho de 250px y un padding de 125px a ambos lados</p>
+  </div>
+</div>
+-->
+<div class="unit_em_div"><h2>Unit_em <span>(hace un momento)</span></h2>
+  <p class="unit_em_p">La medidad de em es una medida respecto al font-size del elemento padre. Por ejemplo, a este parrafo le voy a asignar un tamaño de 0.5em y como el elemento padre es el div al cual le asigné un tamaño de 20px, este párrafo debe tener un tamaño de 10px (20*0.5). <br> Pero, en caso de que el elemento padre no tenga definido un font-size, el tamaño rem iría a buscar el elemento padre siguiente, es decir, el padre del padre del elemento, y esto se irá repitiendo hasta que encuentre un font-sise de referencia hasta encontrar uno, en caso de que no encuentre ninguno irá hasta el elemento raiz, HTML. </p>
+</div>
+<div class="unit_rem_div"><h2>Unit_rem <span>(hace un momento)</span></h2>
+  <p class="unit_rem_p">La medidad de rem es una medida respecto al font-size del elemento raiz, a diferencia del em que busca al elemento padre. El elemto raiz siempre va a ser HTML. Por ejemplo, a este parrafo le voy a asignar un tamaño de 0.75rem y como el elemento raiz es HTML al cual le asigné un tamaño de font-size de 20px, este párrafo debe tener un tamaño de 15px (20*0.75) </p>
+</div>
+<div class="unit_vp"><h2>Unit_vh_vw <span>(hace un momento)</span></h2>
+  <p>La medidad de vh y vw hace referencia al view port, es decir, al tamaño de la ventana donde se está viendo, es una medida se representa en porcentaje. Por ejemplo, el ancho (width) de este div tiene el 75% y el alto un 15% de la ventana del navegador.</p>
+  <p><br>Hay otras unidades del view port y son el vmin y vmax. La unidad vmin es el minínmo entre el ancho y el alto, por otro lado, vmax es el máximo entro el ancho y alto. <br> Acá un ejemplo</p>
+  <div class="vmin">Ancho de 75px <br><br> Alto de 100px</div>
+  <div class="vmax">Ancho de 100px <br><br> Alto de 75px</div>
+  <p><br>Si decimos que tenemos dos view ports, el azul y el rojo. Para el cuadrado azul el vmin es de 1vw por que el ancho es más pequeño, en cambio para el cuadrado rojo el vmin es igual a 1vh porque en este caso la medida más pequeña es la del alto. Eso mismo pasa para el vmax solo que con los valores máximos.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="C_CSS_22_display.css">
+  <title>Display</title>
+</head>
+<body>
+  <h1>Display</h1>
+  <h2>Display con Block</h2>
+  <p>
+    Para ver esta propiedad vamos utilizar dos enlaces (etiqueta "a"), por defecto estas etiquetas son elementos en línea y para cambiar esto usaremos "display", además, le agregaré un fondo para que se pueda apreciar mejor su comportamiento.
+  </p>
+  <p>
+    Primero ilustraremos los enlaces con su propiedad por defecto:
+  </p>
+  <a href="" class="enlaces-de-ejemplo-display">Enlace 1 de ejemplo</a>
+  <a href="" class="enlaces-de-ejemplo-display">Enlace 2 de ejemplo</a>
+  <p>
+    Ahora, los enlaces usando la propiedad "display" con el valor de "block":
+  </p>
+  <a href="" class="enlaces-de-ejemplo-display enlaces-de-ejemplo-display--block">Enlace 3 de ejemplo</a>
+  <a href="" class="enlaces-de-ejemplo-display enlaces-de-ejemplo-display--block">Enlace 4 de ejemplo</a>
+  <p>
+    Como se puede observar los enlaces se ubicaron uno debajo de otro. 
+  </p>
+  <p>
+    La propiedad "display" acompañada del valor "block" lo que hace es decirle a esa etiqueta que ocupe todo el ancho disponible como se puede observar con el color  de fondo, además, todo lo que se encuentra después de la etiqueta arranca en una linea nueva. 
+  </p>
+  <h2>Display con inline</h2>
+  <p>Así como podemos convertir elemento en linea a elementos en bloque, podemos hacer lo contrario con la propiedad "display" acompañada del valor "inline". Por ejemplo, "p" es una etique que por defecto viene en bloque.</p>
+  <p>
+    Primero mostraré como se ve dos etiquetas "p" por defecto:
+  </p>
+  <p class="p-de-ejemplo-display">
+    Etiqueta "p" de ejemplo.
+  </p>
+  <p class="p-de-ejemplo-display">
+    Etiqueta "p" de ejemplo.
+  </p>
+  <p>
+    Ahora, como se ven las etiquetas "p" usando "display" con el valor de "inline":
+  </p>
+  <p class="p-de-ejemplo-display p-de-ejemplo-display--inline">
+    Etiqueta "p" de ejemplo.
+  </p>
+  <p class="p-de-ejemplo-display p-de-ejemplo-display--inline">
+    Etiqueta "p" de ejemplo.
+  </p>
+  <p>
+    Cabe recalcar que los elementos en linea tienen el ancho y alto del contenido, y estos no se pueden modificar.
+  </p>
+  <h2>Display con inline-block</h2>
+  <p>
+    Lo que hace inline-block es convertir varios elementos en un bloque y agruparlos en linea.
+  </p>
+  <p>Primero mostraremos cómo se vería el menú sin usar "display".</p>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a class="nav__link" href="">Home</a></li>
+      <li class="nav__item"><a class="nav__link" href="">About Us</a></li>
+      <li class="nav__item"><a class="nav__link" href="">Proyects</a></li>
+      <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
+      <li class="nav__item"><a class="nav__link link--button" href="">Log In</a></li>
+    </ul>
+  </nav>
+  <p>Ahora, cómo se vería usando la propiedad "display" con el valor "inline-block".</p>
+  <nav class="nav nav--display-inlineblock">
+    <ul class="nav__list list--display-inlineblock">
+      <li class="nav__item item--display-inlineblock">
+        <a class="nav__link link--display-inlineblock" href="">Home</a>
+      </li>
+      <li class="nav__item item--display-inlineblock">
+        <a class="nav__link link--display-inlineblock" href="">About Us</a>
+      </li>
+      <li class="nav__item item--display-inlineblock">
+        <a class="nav__link link--display-inlineblock" href="">Proyects</a>
+      </li>
+      <li class="nav__item item--display-inlineblock">
+        <a class="nav__link link--display-inlineblock" href="">Contact</a>
+      </li>
+      <li class="nav__item item--display-inlineblock">
+        <a class="nav__link link--display-inlineblock link--button" href="">Log In</a>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>

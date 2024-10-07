@@ -1,0 +1,35 @@
+body{
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+.negrita-del-texto{
+  font-weight: bold;
+}
+label{
+  font-weight: bold;
+}
+
+/*is, funciona para agrupar elementos dentro de una etiqueta específica con prioridad (0,1,1)*/
+section :is(.elemento2, .elemento4){
+  color: red;
+}
+/*where, funciona para agrupar elementos dentro de una etiqueta específica con prioridad (0,0,1)*/
+section :where(.elemento2, .elemento4){
+  color: red;
+}
+/*has, en este caso modifica el "span" que tiene un "p" dentro*/
+span:has(p){
+  color: red;
+}
+/*has, otra función, en este caso modifica el "li" como siguiente elemento un "div"*/
+li:has(+div){
+  background-color: #ccc;
+}
+
+/*Ejemplo para combinar has con valid/invalid*/
+label:has(input[type="email"]:valid){
+  color: green;
+}
+label:has(input[type="email"]:invalid){
+  color: red;
+}

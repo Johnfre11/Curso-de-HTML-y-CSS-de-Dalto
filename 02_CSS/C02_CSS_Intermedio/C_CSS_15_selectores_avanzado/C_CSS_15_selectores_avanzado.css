@@ -1,0 +1,39 @@
+body{
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+/*-----SELECTORES POR ATRIBUTO-----*/
+/*Atributo completo...*/
+img[src="Imagenes/imagen-de-prueba.png"]{
+  width: 50%;
+}
+/*Terminado en...*/
+img[src$="png"]{
+  width: 50%;
+}
+/*Comienza con...*/
+img[src^="Imagenes"]{
+  width: 50%;
+}
+
+/*-----SELECTORES POR HIJOS-----*/
+/*Hijo directo o indirecto...*/
+ul strong{
+  color: #f00;
+}
+/*Hijo directo...*/
+ul > li{
+  text-decoration: underline;
+}
+/*Esta propiedad no funciona porque "strong" no es hijo directo de "ul"*/
+ul > strong{
+  text-decoration: line-through;
+}
+/*-----SELECTOR ADYACENTE-----*/
+/*Elemento siguiente...*/
+h1 + h2{
+  color: #666;
+}
+h2 + p{
+  color: #00f5;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fondos - Backgrounds</title>
+    <link rel="stylesheet" href="C_CSS_12_fondos_backgrounds.css">
+  </head>
+  <body>
+    <h1>Fondos - Backgrounds</h1>
+    <h2>Ejemplo de transparencia</h2>
+    <p>Este parrafo está para hacer de ejemplo y ver que se puede leer a través del cuadrado negro, eso es porque el cuadrado a pesar de ser negro (#000) tiene una opacidad de 5 (#0005) y gracias a eso es que este texto se puede leer.Ahora, para rellenar más el párrafo haré un lorem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ratione, ipsum cupiditate repudiandae qua.m eaque atque, culpa neque ad totam eum mollitia eos, amet consequuntur quidem sapiente quibusdam rem repellendus. lorem</p>
+    <div class="box"></div>
+    <h2>Ejemplos de la propiedad Background-image</h2>
+    <div>
+      <p>Ahora vamos a probar la función Background-image la cual dentro de un la etiqueta puede incluir una imagen de internet. <br> Por ejemplo:
+      </p>
+      <div class="imagen-de-prueba"></div>
+      <p>
+        Esto está bien, pero ahora tenemos un problema, dado que el div anterior donde tenemos el fondo con esa imagen de prueba se ve la imagen cortada porque no cabe en el tamaño del div que definí, por lo tanto viene la siguiente propiedad:</p>
+      <h3>Background-size</h3>
+      <p>
+        Lo que hace esta propiedad es ajustar el ancho de la imagen respecto al ancho de la etiquita donde queremos ponere la imagen. Esta propiedad se puede medir como porcentaje o con otros valores de css que veremos más abajo, este porcentaje está refenciando al ancho de la etiqueta. <br> Por ejemplo, la primera imagen tiene 75% del ancho de la etiqueta, por lo cual el 25% restante sale cortado, y la segunda imagen tiene el 100% del ancho de la etiqueta, sin embargo, en la parte inferior se puede apreciar que se corta de una manera símilar a la imagen anterior en su ancho.
+      </p>
+      <div class="imagen-de-prueba cincuenta"></div>
+      <div class="imagen-de-prueba cien"></div>
+      <h4>Valores especiales de Background-size</h4>
+      <p>El primer valor es "contain" este valor lo que hace es ajustar la imagen de fondo a la etiqueta para que entre al menos una vez, este ajuste puede ser tanto para el alto como para el ancho. </p>
+      <div class="imagen-de-prueba contain-ancho"></div>
+      <div class="imagen-de-prueba contain-alto"></div>
+      <p>
+        El segundo valor especial es "cover" este valor lo que hace es ajustar la imagen sin que se repita lo mejor que se pueda al tamaño de la etiqueta, este valor se puede combinar bien con la propiedad background-position y sus valores: left, right, center, bottom, top; la propiedad de background-position también se puede usar con coordenadas. </p>
+      <div class="imagen-de-prueba cover"></div>
+      <p>
+        El siguiente valor es background-attachment junto con el valor "fixed" lo que hace es mantener la imagen con su resolución original y fija, es decir que a medida que se navega por la página la etiqueta se mueve con la página pero la imagen no.
+      </p>
+      <div class="imagen-de-prueba attachment"></div>
+      <h2>background</h2>
+      <p>Por último tenemos la propiedad background que engloba todas las anteriores en una sola. <br><br>Tiene el siguiente orden: imagen(url) position / size attachment color</p>
+      <div class="imagen-de-prueba background"></div>
+      
+    </div>
+  </body>
+</html>

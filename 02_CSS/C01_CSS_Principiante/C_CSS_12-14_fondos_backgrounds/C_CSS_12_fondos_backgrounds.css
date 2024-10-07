@@ -1,0 +1,45 @@
+body{
+  background-color: #bebebe;
+  font-family: sans-serif;
+}
+.box{
+  margin: 20px;
+  width: 25vw;
+  height: 25vw;
+  background-color: #0005;
+  position: absolute;
+  top: 12vh;
+}
+.imagen-de-prueba{
+  width: 45vw;
+  height: 45vw;
+  margin: 1vh;
+  background-image: url(https://cafeplatino.com/wp-content/uploads/2023/05/imagen-de-prueba-320x240-1.jpeg);
+}
+.cincuenta{
+  background-size: 75%;
+}
+.cien{
+  background-size: 100%;
+}
+.contain-ancho{
+  height: 200px;
+  width: 400px;
+  background-size: contain;
+}
+.contain-alto{
+  height: 400px;
+  width: 200px;
+  background-size: contain;
+}
+.cover{
+  background-size: cover;
+  background-position: center;
+}
+.attachment{
+  background-attachment: fixed;
+}
+
+.background{
+  background:  url(https://cafeplatino.com/wp-content/uploads/2023/05/imagen-de-prueba-320x240-1.jpeg) center / cover fixed #0005;
+}

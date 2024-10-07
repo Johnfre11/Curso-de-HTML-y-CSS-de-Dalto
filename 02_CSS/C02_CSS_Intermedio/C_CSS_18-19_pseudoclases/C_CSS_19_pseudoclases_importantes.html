@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="C_CSS_19_pseudoclases_importantes.css">
+  <title>Pseudo-clases</title>
+</head>
+<body>
+  <h1>Pseudo-clases Parte 2</h1>
+  <h2><a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes" target="_blank">Link para todas las pseudoclases.</a></h2>
+  <section>
+    <h2>IS</h2>
+    <p>Is funciona para agrupar varios elementos a los que se le quiera modificar alguna propiedad, para usarlo se necesita la siguiente sintaxsis <span class="negrita-del-texto"> "etiqueta-padre :is(elementos-a-modificar) { }"</span>, por ejemplo, vamos a tener varios "li" y solo algunos van a tener un "class" para identificarlos y además, solo quiero modificar estos que se encuentres dentro de la etiqueta "section"</p>
+    <p>Es decir, a los elemento 2 y 4 que tienen el atributo "class" para identificarlo y además se encuentran dentro de la etiqueta section le vamos a cambiar el color a rojo.</p>
+    <ul>
+      <li>Elemento 1</li>
+      <li class="elemento2">Elemento 2</li>
+      <li>Elemento 3</li>
+      <li class="elemento4">Elemento 4</li>
+    </ul>
+  </section>
+  Solo para comprobar que esté funcionando correctamente vamos a crear una segunda lista con los mismos atributos "class" pero fuera de la etiqueta "section", si todo está correcto en la lista anterior los elemento 2 y 4 serán rojos y en la lista siguiente ningún elemento se debería ver modificado. 
+  <ul>
+    <li>Elemento 1</li>
+    <li class="elemento2">Elemento 2</li>
+    <li>Elemento 3</li>
+    <li class="elemento4">Elemento 4</li>
+  </ul>
+  <h2>Where</h2>
+  <p>Where funciona igual que Is, sin embargo, tiene una especificidad (prioridad) menor.</p>
+  <h2>Has</h2>
+  <p>Has funciona para comprobar que tenga un elemento especificado como hijo (directo o indirecto) y en caso de que se cumpla esta condición se modificarán las propiedades. Por ejemplo: </p>
+  <ul>
+    <li><span><p>Esta oración se encuentra dentro de un span, por lo tanto, debería cambiarme el color a rojo porque así lo estoy especificando. </p></span></li>    
+    <li><p>En cambio este párrafo está fuera de ese span, por lo tanto, no se ve modificado el color de la letra, sin embargo, has tiene otra función y es la de modificar un elemento especificano un elemento posterior, por ejemplo, este párrafo está antes de un "div" vacio, y quiero que este cambie el fondo mediante esa condicion, para eso lo hago de la siguiente manera: li:has(+div).</p></li>
+    <div></div>
+  </ul>
+  <h3>Otro ejemplo del has</h3>
+  <p>El has se puede usar de maneras interesantes como la que veremos, en el capítulo anterior vimos que se podía cambiar el color de un "input" para comprobar que lo que se estaba introduciendo fuera correcto, ahora lo que haremos será darle este cambio de color pero a su padre "label".</p>
+  <div>
+    <label for="Email">Email: <input type="email"></label>
+  </div>
+  <p>Para lograr eso debemos usar la siguiente sintaxsis: <br><br> <span class="negrita-del-texto">label:has(input[type="email"]:valid){ } </span> </p>
+  <p>Donde "label" es la etiqueta que se va a modificar, "has" comprueba que "label" tenga dentro un "input" y "valid" comprueba que el contenido sea válido</p>
+</body>
+</html>

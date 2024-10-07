@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  background: lightgreen;
+  margin: 15px;
+}
+
+.box-default{
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  padding: 10px;
+  border: 5px solid black;
+  box-sizing: content-box;
+  font-size: small;
+}
+.box-new{
+  width: 100px;
+  height: 100px;
+  background: lightgrey ;
+  padding: 7px;
+  font-size: 11px;
+  border: 5px solid black;
+  /*"box-sizing: border-box" es una herramienta muy poderosa, la función que tienes es man tener el tamaño de las cajas que se defirne con width y height sin importar que se modificen las propiedades como: border y padding */
+  box-sizing: border-box;
+}

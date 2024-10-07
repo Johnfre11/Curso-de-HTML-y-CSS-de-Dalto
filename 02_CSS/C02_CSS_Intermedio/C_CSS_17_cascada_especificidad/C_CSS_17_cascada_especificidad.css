@@ -1,0 +1,26 @@
+body{
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+h1{
+  color: red;
+}
+img{
+  width: 75%;
+}
+h3{
+  color: blue;
+}
+.titulo1{
+  color: red;
+}
+#titulo1{
+  color: lightblue;
+}
+
+.titulo2{
+  color: brown; 
+}
+.titulo2{
+  color: red;
+}

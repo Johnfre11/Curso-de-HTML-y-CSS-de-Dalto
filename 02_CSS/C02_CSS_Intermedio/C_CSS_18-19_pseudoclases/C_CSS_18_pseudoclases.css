@@ -1,0 +1,82 @@
+body{
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+.titulo-cambio-de-color, .titulo-cambio-de-color-click{
+  font-weight: 100;
+  text-decoration: underline;
+  font-size: medium;
+}
+img{
+  padding: 0 30px;
+  width: 75%;
+}
+ul{
+  line-height: 1.5;
+  width: 50%;
+}
+/*-------Ejemplo 1-------*/
+/*Cuando se pasa el mouse por encima*/
+.titulo-cambio-de-color:hover{
+  color: red;
+}
+/*Cuando se clickea encuma del elemento*/
+.titulo-cambio-de-color-click:active{
+  color: red;
+}
+/*Primer elemento li*/
+.ul-Ejemplo1-li li:first-child{
+  color: red;
+}
+/*Último elemento li*/
+.ul-Ejemplo1-li li:last-child{
+  color: blue;
+}
+/*Enécimo elemento li*/
+.ul-Ejemplo1-li li:nth-child(3){
+  color: green;
+}
+/*Seleccionar más de un elemento dejando espacios de por medio*/
+.ul-Ejemplo1-li li:nth-child(2n){
+  background-color: #aaa;
+}
+/*-------Ejemplo 2-------*/
+/*Hay un elemento que no es un li, por lo tanto ignora esta propiedad*/
+.ul-Ejemplo2-li li:nth-child(5){
+  color: red;
+}
+/*Modifica la propiedad del elemento typo "li" en esa posición, ignorando los demás elementos que no son tipo "li"*/
+.ul-Ejemplo2-li li:nth-of-type(5){
+  color: blue;
+}
+
+/*Modifica las propiedades de toda la lista menos a los "excluidos"*/
+.ul-Ejemplo2-li li:not(.excluido){
+  color: red;
+}
+
+/*-------Ejemplo checkbox-------*/
+/*Modifica una propiedad cuando se checkea la casilla*/
+input[type="checkbox"]:checked{
+  margin: 0 20px;
+}
+/*Modifica una propiedad es inválida la entrada*/
+input[type="email"]:invalid{
+  color: red;
+}
+/*Modifica una propiedad es válida la entrada*/
+input[type="email"]:valid{
+  color: green;
+}
+
+/*-------Ejemplo links-------*/
+/*Modifica una propiedad si el link está visitado*/
+.link-ejemplo:visited{
+  color: green;
+}
+/*Modifica una propiedad si el link no está visitado*/
+.link-ejemplo:link{
+  color: red;
+}
+
+

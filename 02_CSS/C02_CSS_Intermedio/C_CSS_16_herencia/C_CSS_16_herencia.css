@@ -1,0 +1,11 @@
+body{
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+div{
+  color: #00f;
+}
+div > p + p{
+  color:inherit;
+  font-family: initial;
+}

@@ -1,0 +1,37 @@
+body{
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+ol li::marker{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.p-ejemplo3-selection{
+  background-color: #e001;
+}
+
+.h3-ejemplo1-first-letter::first-letter{
+  color: red;
+}
+.p-ejemplo2-first-line::first-line{
+  color: red;
+  font-weight: bold;
+}
+.p-ejemplo3-selection::selection{
+  background-color: black;
+  color: white;
+}
+.input-ejemplo4-placeholder::placeholder{
+  color: green;
+}
+.ul-ejemplo5-marker li::marker{
+  color: red;
+}
+.h3-ejemplo6-before::before{
+  content: "Este texto es el before - ";
+  color: red;
+}
+.h3-ejemplo7-after::after{
+  content: " - Este texto es el after.";
+  color: red;
+}

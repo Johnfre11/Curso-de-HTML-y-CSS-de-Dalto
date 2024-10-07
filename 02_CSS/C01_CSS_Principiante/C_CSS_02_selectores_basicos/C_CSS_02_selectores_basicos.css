@@ -1,0 +1,23 @@
+/*Para cambiarle las propiedades a una etiqueta se comienza siempre por el nombre*/
+/*Para este ejemplo a todas las etiquetas <li> se les está cambiando el color a gris*/
+li {
+  color: gray;
+}
+/*En este ejemplo, La etiqueta <span> se encuentra dentro de una etiqueta <li> y aún así todo lo que se encuentre dentro de la etiqueta <span> se modificara. */
+span {
+  color: blue;
+}
+/*Elementos tipo "class" se usan para crear elementos con las mismas propiedades*/
+/*Para este ejemplo se ha definido una clase llamada "ingrediente-faltante" que pondrá el texto en rojo y un tamaño de letra de 18px*/
+/*Para llamar a los elementos tipo "class" se debe poner un . antes del nombre, de lo contrario css buscará un elemento tipo etiqueta con el mismo nombre*/
+.ingrediente-faltante{
+  color: red;
+  font-size: 18px;
+}
+/*Elementos tipo "id" se utilizan UNA SOLA vez en todo el documento .html, sirven para identificar un elemento en JavaScript y CSS*/
+/*Para  modificar las propiedades de este elemento se utiliza # antes del nombre*/
+
+#ingrediente-principal {
+  color: green;
+  font-size: 20px;
+}

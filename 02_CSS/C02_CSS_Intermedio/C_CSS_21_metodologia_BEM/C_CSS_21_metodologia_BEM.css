@@ -1,0 +1,36 @@
+body{
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+.span-negrita{
+  font-weight: 700;
+}
+li::marker{
+  font-weight: 700;
+}
+
+/*-----Acá comienza el capítulo-----*/
+.lista-de-ingredientes{
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+/*Clase modificadora del bloque lista-de-ingredientes*/
+.lista-de-ingredientes--vieja{
+  opacity: 0.3;
+  background-color: #6663;
+}
+
+/*Elemento del bloque lista-de-ingredientes*/
+.lista-de-ingredientes__item{
+  margin: 10px 0;
+  list-style: circle;
+}
+
+/*Clase modificadora del elemento item*/
+.item--importante{
+  color: #00f;
+}
+/*Clase modificadora del elemento item*/
+.item--danino{
+  color: #f00;
+}

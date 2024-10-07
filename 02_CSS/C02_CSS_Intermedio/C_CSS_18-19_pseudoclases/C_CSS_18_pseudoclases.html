@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="C_CSS_18_pseudoclases.css">
+  <title>Pseudo-clases</title>
+</head>
+<body>
+  <h1>Pseudo-clases</h1>
+  <h2><a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes" target="_blank">Link para todas las pseudoclases.</a></h2>
+  <h2>Hover</h2>
+  <p>Hover es una pseudoclase que activa las propiedades definidas cuando el mouse se encuentre encima del elemento y se define como "etiqueta:hover{ }". Por ejemplo: </p>
+  <h3 class="titulo-cambio-de-color">Este título se va a cambiar de color cuando el mouse se encuentre encima.</h3>
+  <h2>Active</h2>
+  <p>Active es una pseudoclase que activa las propiedades definidas cuando se le da click  encima del elemento y se define como "etiqueta:active{ }". Por ejemplo: </p>
+  <h3 class="titulo-cambio-de-color-click">Este título se va a cambiar de color cuando se le de click encima.</h3>
+  <h2>First-child, nth-child(#), last-child</h2>
+  <p>Para las etiquetas de tipo listado "li" hay pseudoclases para seleccionar el primero elemento, el último elemento y cualquier elemento.</p>
+  <h3>Ejemplo 1:</h3>
+  <p>Para este ejemplo voy a dejar de color rojo el primero elemento, azul el último y de verde el tercero (para usar "nth-child(#)" dentro de los parentesís se debe especificar la posición del elemento que se desea cambiar), usando solamente las pseudoclases.</p>
+  <p>Además, con la pseudoclase nth-child(#) se puede selecionar más de un elemento dejando otros de por medio, en el ejemplo vamos a usar "2n" como paramentro en nth-child(2n) para dejar un espacio de por medio y cambiar el fondo. </p>
+  <ul class="ul-Ejemplo1-li">
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>Elemento 5</li>
+  </ul>
+  <img src="C_CSS_18_Imagenes/Ejemplo de psudoclases para 'li'.png" alt="Ejemplo del uso de las pseudoclases para el 'li'">
+  <h3>Ejemplo 2:</h3>
+  <p>Para el ejemplo dos tenemos una lista de 10 elementos y en ella hay un elemento que no es un "li". Al elemento que no es un "li" pero está dentro de un "ul" no se le puede cambiar las propiedades y además si se le quiere cambiar las propiedades al elemento que ocuapa la posición donde está este elemento que no es un "li" (en este caso Elemento 5) no se podría usando la pseudoclase "nth-child(#)" y su posición, tocaría sumarle 1 a la posicón (6) para que ignore el elemento que no es un "li" o usar la pseudoclase "nth-of-type(#)" con la posición correspondiente (5).</p>
+  <p>También está la pseudoclase "not(?)" lo que hace esta pseudoclase es seleccionar todos los li menos el los que se indiquen dentro del parentesís. En este ejemplo el elemento 3, 5, 7 y 9 serán excluidos del grupo de "li" a los cuales se les cambiará el color a rojo </p>
+  <ul class="ul-Ejemplo2-li">
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li class="excluido">Elemento 3</li>
+    <li>Elemento 4</li>
+    <span>Elemento que no es un "li"</span>
+    <li class="excluido">Elemento 5</li>
+    <li>Elemento 6</li>
+    <li class="excluido">Elemento 7</li>
+    <li>Elemento 8</li>
+    <li class="excluido">Elemento 9</li>
+  </ul>
+  <img src="C_CSS_18_Imagenes/Ejemplo2 de psudoclases para 'li'.png" alt="Ejemplo2 del uso de las pseudoclases para el 'li'">
+  <h2>Input: Checked, valid, invalid</h2>
+  <p>Para las etiquetas input hay varias psudoclases que se pueden usar.</p>
+  <h3>Checked</h3>
+  <p>Cambia una propiedad en caso de que la casilla esté seleccionada. En este caso, la casilla se mueve 20px a la derecha.</p>
+  <input type="checkbox">
+  <h3>Valid e invalid</h3>
+  <p>Comprueba que el formato del input sea correcto. Por ejemplo para un email, se pone de color rojo cuando en invalido y verde cuando es válido.</p>
+  <input type="email">
+  <h2>Links: link, visited</h2>
+  <p>Comprueba que el link está visitado o sin visitar. Por ejemplo, se pone de color rojo cuando no está visitado y verde cuando está visitado.</p>
+  <a class="link-ejemplo" href="https://www.google.com" target="_blank">Google</a> <br>
+  <a class="link-ejemplo" href="https://www.gogle.com" target="_blank">Gogle no visitado</a>
+
+
+
+  
+</body>
+</html>

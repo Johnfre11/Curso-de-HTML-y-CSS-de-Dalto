@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="C_CSS_20_pseudoelementos.css">
+  <title>Pseudo-Elementos</title>
+</head>
+<body>
+  <h1>Pseudo-Elementos</h1>
+  <p>Los pseudoelementos son como un subgrupo de elementos de un elemento específico y se utilizan con la siguiente sintaxsis "elemento::pseudoelemento{ }".</p>
+  <ol>
+    <li><h2>First-letter</h2></li>
+    <h3 class="h3-ejemplo1-first-letter">Este título es de ejemplo.</h3>
+    <p>El título anterior es un ejemplo y le vamos a cambiar el color de la primera letra con en pseudoelemento "first-letter". </p>
+    <li><h2>First-line</h2></li>
+    <p>Para este ejemplo usaré un lorem, para que se generen varias líneas y se pueda notar el uso de first-line.</p>
+    <p class="p-ejemplo2-first-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatibus est, iusto incidunt ipsam nesciunt tempore similique provident, culpa adipisci, deserunt exercitationem illo obcaecati explicabo quisquam porro rerum vitae cumque?</p>
+    <li><h2>Selection</h2></li>
+    <p>Selection lo que hace es poder modificar como se ve la selection de un elemento, por ejemplo, el siguiente texto se va a ver con un fondo negro y letra blanca: </p>
+    <p class="p-ejemplo3-selection">Estes es un párrafo de ejemplo para selection: Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quis soluta natus est consequatur.</p>
+    <li><h2>Placeholder</h2></li>
+    <p>Funciona para modificar las propiedades de un placeholder.</p>
+    <label for="Email">Email: <input class="input-ejemplo4-placeholder" type="email" placeholder="ejemplo@hotmail.com"></label>
+    <li><h2>Marker</h2></li>
+    <p>Funciona para modificar las propiedades del marcador de los li.</p>
+    <ul class="ul-ejemplo5-marker">
+      <li>Ejemplo 1</li>
+      <li>Ejemplo 2</li>
+      <li>Ejemplo 3</li>
+    </ul>
+    <li><h2>Before</h2></li>
+    <p>Before lo que hace es escribir un texto antes de un elemento sin crear un elemento nuevo, ese texto creado será un subelemento del elemento que le estamos modificando, por ende no se puede seleccionar en el navegador.</p>
+    <h3 class="h3-ejemplo6-before">Título de ejemplo para before</h3>
+    <li><h2>After</h2></li>
+    <p>After lo que hace es escribir un texto después de un elemento sin crear un elemento nuevo, ese texto creado será un subelemento del elemento que le estamos modificando, por ende no se puede seleccionar en el navegador.</p>
+    <h3 class="h3-ejemplo7-after">Título de ejemplo para after</h3>
+  </ol>
+</body>
+</html>

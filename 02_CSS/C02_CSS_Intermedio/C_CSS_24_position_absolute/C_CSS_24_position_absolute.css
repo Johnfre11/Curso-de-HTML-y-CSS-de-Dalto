@@ -1,0 +1,54 @@
+body{
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  background-color: #ededed;
+}
+p{
+  margin: 0;
+}
+.contenedor-de-box{
+  border: 2px solid #000;
+  margin: 10px;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  text-align: center;
+  background-color: #ffa60067;
+}
+.box--lightblue{
+  background-color: lightblue;
+}
+/*Propiedad "position" con "absolute" respecto a la página*/
+.box--gray{
+  background-color: gray;
+  position: absolute;
+  top: 350px;
+  left: 200px;
+}
+/*Propiedad "position" con "absolute" respecto a un contenedor que usa "relative"*/
+.contenedor-de-box--relative{
+  position: relative;
+}
+.box--gray--2{
+  background-color: gray;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+/*Propiedades para usar importancia entre objetos de "relative" y "absolute"*/
+.box--relative{
+  position: relative;
+  z-index: 0;
+}
+.box--gray--2--relative{
+  z-index: 20;
+}
+.box--lightblue--relative{
+  position: relative;
+  z-index: 30;
+}
+

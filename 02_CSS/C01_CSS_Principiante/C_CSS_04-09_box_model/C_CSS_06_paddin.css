@@ -1,0 +1,25 @@
+.formulario{
+  background: gray;
+  padding: 10px 15px 20px 0;
+  /*Es igual que escrbir esto, y se debe tener el cuenta que va en el sentido de las manecillas de reloj*/
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  /*Cuando a padding se le dan dos valores solamente, este entiende que el primer valor es para la distancia a los bordes superior e inferior, el segundo valor es para la distancia a los bordes izquiero y derecho.*/
+  padding: 5px 10px;
+}
+.formulario_input{
+  padding: 5px 10px;
+  background: white;
+  color: blue;
+}
+/*Esta es la segunda "class" del boton*/
+.formulario_input_submit {
+  background: lightgrey;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 20%;
+  color: black;
+  padding: 10px;
+}
